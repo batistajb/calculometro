@@ -1,0 +1,21 @@
+<div id="divTemplate">
+    {% if consumo %}
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-3 mt-4">
+                    <img src="img/{{consumo.caminhoImg}}" class="img-sider-bar " alt="{{consumo.altImg}}">
+                </div>
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="range">
+                            <input type="range" min="0" max="10" step="1" value="0">
+                            <p class="rangeLabel" id="rangeLabel">0%</p>
+                        </div>
+                        <span class="value">0</span>
+                        <p style="padding-top: 30px; font-size: 30px">Hrs <a style="font-size: 20px">de uso</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+</div>
