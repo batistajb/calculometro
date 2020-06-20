@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="icon.svg">
+    <meta charset="utf-8">
+    <title>Calculômetro</title>
+
+    <script data-ad-client="ca-pub-6267780819617698" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+</head>
+<body>
+
+<div id="preloder">
+    <div class="loader"></div>
+</div>
+
+<nav id="sidebar">
+    <div class="sidebar-header pt-2 mb-2">
+        <img src="icon.png" alt="Logo" class="img">
+    </div>
+</nav>
+
+<div id="header">
+
+    <nav class="navbar navbar-personalizada">
+        <div class="container-fluid pt-1 pb-1">
+            <div class="navbar-header">
+                <h1 style="font-size: 35px; color: white">Calcular consumo de internet por serviços</h1>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container pb-5 mb-2">
+        <div>
+            <div class="col-md-12 mb-4">
+                <form class="form-inline">
+                    <div class="input-group ">
+                        <h2 style="font-size: 30px">Gasto médio de internet</h2>
+                        <input class="form-control ml-1" type="number" placeholder="" id="entrada" autofocus>
+                        <div class="input-group-append">
+                            <select class="form-control form-control-navbar" id="unidade">
+                                <option value="MB" >MB</option>
+                                <option value="GB" >GB</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-group ">
+                        <input class="form-control ml-1 btn btn-outline-primary" type="button" value="Calcular" onclick="calcula()">
+                    </div>
+                </form>
+            </div>
+            <div id="divTemplate"></div>
+
+        </div>
+        <div class="col-md-12">
+            <div class="row">
+                <p>* Os valores para os cálculos possuem como base a reprodução das mídias em qualidade HD.</p>
+                <p>** Os valores são aproximados, depende do uso individual.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class=" footer">
+        <div class="container">
+            <div class="footer__text-copyright">
+                <p>
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                    <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://github.com/batistajb"
+                                                                         target="_blank">jbbatista</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</div>
+<!--<script src="dist/app.js"></script>-->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<!--<script src="https://mozilla.github.io/nunjucks/files/nunjucks.min.js"></script>-->
+</body>
+</html>
